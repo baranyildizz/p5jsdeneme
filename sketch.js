@@ -16,14 +16,20 @@ function setup() {
 
 //}
 
-function draw() {
-  background(51);
-
-  if (mouseIsPressed){
+function mousePressed() {
+  if (value === 0) {
     var jump = createVector(0, -5);
     person.applyForce(jump);
   }
+}
 
+function draw() {
+  background(51);
+
+  //if (mouseIsPressed){
+  // var jump = createVector(0, -5);
+  //  person.applyForce(jump);
+  //}
   translate(-person.pos.x + 50, 0);
 
   var gravity = createVector(0, 0.1);
