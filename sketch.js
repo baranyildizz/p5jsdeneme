@@ -3,11 +3,16 @@
 // http://natureofcode.com/
 // Session 2: Array of Particles, multiple forces
 
+var img;
+function preload() {
+  img = loadImage('Asset.jpg');
+}
 
 function setup(){
   createCanvas(800,800);
   background(0);
   noStroke();
+  image(img, 0,0);
 }
 
 function draw(){
