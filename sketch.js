@@ -3,45 +3,15 @@
 // http://natureofcode.com/
 // Session 2: Array of Particles, multiple forces
 
-var person;
-
-//var obstacle;
-
-function setup() {
-  createCanvas(640, 360);
-  person = new Person();
+var value = 0;
+function draw() {
+  fill(value);
+  rect(25, 25, 50, 50);
 }
-
-//function touchStarted() {
-
-//}
-
 function mousePressed() {
   if (value === 0) {
-    var jump = createVector(0, -5);
-    person.applyForce(jump);
+    value = 255;
+  } else {
+    value = 0;
   }
-}
-
-function draw() {
-  background(51);
-
-  //if (mouseIsPressed){
-  // var jump = createVector(0, -5);
-  //  person.applyForce(jump);
-  //}
-  translate(-person.pos.x + 50, 0);
-
-  var gravity = createVector(0, 0.1);
-  person.applyForce(gravity);
-
-
-  person.update();
-  person.edges();
-  person.display();
-  
-  
-
-  fill(255, 0, 100);
-  rect(400, height - 50, 50, 50);
 }
