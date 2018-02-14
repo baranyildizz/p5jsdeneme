@@ -6,7 +6,7 @@
 var value = 0;
 
 function setup(){
-  size(800,800);
+  createCanvas(800,800);
   background(0);
    
 
