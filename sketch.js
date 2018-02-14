@@ -9,10 +9,11 @@ function preload() {
 }
 
 function setup(){
-  createCanvas(800,800);
+  createCanvas(1000,1000);
   background(0);
   noStroke();
-  image(img, 0,0);
+  imageMode(CENTER);
+  image(img, width/2,height/2);
 }
 
 function draw(){
