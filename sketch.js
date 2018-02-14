@@ -13,10 +13,10 @@ function setup() {
 }
 
 function touchStarted() {
-  if (key == ' ') {
+  
     var jump = createVector(0, -5);
     person.applyForce(jump);
-  }
+  
 }
 
 function draw() {
