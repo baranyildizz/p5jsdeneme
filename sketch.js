@@ -13,6 +13,6 @@ function setup(){
 }
 
 function draw(){
-  fill(255);
+  fill(255,0,0);
   rect(mouseX, mouseY, 20, 20);
 }
