@@ -12,12 +12,12 @@ function setup() {
   person = new Person();
 }
 
-function touchStarted() {
-  if (value === 1) {
+//function touchStarted() {
+  if (mouseIsPressed) {
     var jump = createVector(0, -5);
     person.applyForce(jump);
   }
-}
+//}
 
 function draw() {
   background(51);
