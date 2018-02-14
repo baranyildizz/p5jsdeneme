@@ -5,6 +5,7 @@
 
 var value = 0;
 function draw() {
+  background(50);
   fill(value);
   rect(25, 25, 50, 50);
 }
