@@ -4,15 +4,15 @@
 // Session 2: Array of Particles, multiple forces
 
 var value = 0;
-function draw() {
-  background(50);
-  fill(value);
-  rect(25, 25, 50, 50);
+
+function setup(){
+  size(800,800);
+  background(0);
+   
+
 }
-function mousePressed() {
-  if (value === 0) {
-    value = 255;
-  } else {
-    value = 0;
-  }
+
+function draw(){
+  fill(255);
+  rect(mouseX, mouseY, 20, 20);
 }
