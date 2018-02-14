@@ -12,5 +12,6 @@ function setup(){
 
 function draw(){
   fill(255,0,0);
-  ellipse(mouseX, mouseY, 20, 10);
+  ellipse(mouseX, mouseY, 5, 5);
+  text(mouseX + "," + mouseY,mouseX, mouseY);
 }
